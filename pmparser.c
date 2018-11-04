@@ -49,7 +49,6 @@ procmaps_struct* pmparser_parse(int pid){
 		//printf("#%s",buf);
 		//printf("%s-%s %s %s %s %s\t%s\n",addr1,addr2,perm,offset,dev,inode,pathname);
 		//addr_start & addr_end
-		unsigned long l_addr_start;
 		sscanf(addr1,"%lx",(long unsigned *)&tmp->addr_start );
 		sscanf(addr2,"%lx",(long unsigned *)&tmp->addr_end );
 		//size
